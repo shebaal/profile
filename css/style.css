@@ -81,6 +81,11 @@ li {
   object-fit: contain;
 
 }
+.col-7{
+  
+  align-self: center;
+
+}
 /* end sec1 */
 
 /* sec2 */
@@ -270,17 +275,22 @@ padding-right: 30px;
   flex: 1;
   font-size: 16px;
   font-size: 2.5vw;
-}
 
+}
+.profile-picture{
+  
+  text-align-last: center;
+}
 .profile-wrapper {
   color: white;
   display: flex;
 }
 
 img#profile-picture {
-  width: 500px;
-  height: 500px;
-  
+ 
+  width: 300px;
+    height: 187px;
+
   object-fit: contain;
 }
 
