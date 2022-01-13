@@ -153,7 +153,137 @@
  }
  /* end sec1 */
  
+ 
  /* sec2 */
+ 
+ .about-section{
+  background: #f1f1f1;
+}
+
+.inner-width{
+  max-width: 1000px;
+  overflow: hidden;
+  padding: 0 20px;
+  /*margin: auto;*/
+}
+
+.about-section h1{
+  text-align: center;
+}
+
+.border{
+  width: 100px;
+  height: 3px;
+  background: #e74c3c;
+  margin: 40px auto;
+}
+
+.about-section-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-section-col {
+  flex: 50%;
+}
+
+.about{
+padding-right: 30px;
+}
+
+.about p {
+  text-align: justify;
+  padding-bottom: 20px;
+}
+
+.about a{
+  display: inline-block;
+  color: #e72c3c;
+  text-decoration: none;
+  border: 2px solid #e72c3c;
+  border-radius: 24px;
+  padding: 8px 40px;
+  transition: 0.4s linear;
+}
+
+.about a:hover {
+  color: #fff;
+  background: #e72c3c;
+}
+
+.skills{
+  padding-left: 30px;
+}
+
+.skill{
+  margin-bottom: 10px;
+}
+
+.progress{
+  width: 100%;
+  background: #ddd;
+  border-radius: 12px;
+}
+
+.progress-bar {
+  height: 12px;
+  background: #f9a826;
+  border-radius: 12px;
+}
+
+.progress-bar span{
+  float: right;
+  margin-right: 6px;
+  line-height: 13px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.p1 {
+ width: 80%;
+ 
+ animation-name: example;
+ animation-duration: 9s;
+}
+
+@keyframes example {
+ from {width: 0%;}
+ to {width: 80%;}
+}
+.p2{
+ width: 60%;
+ 
+ animation-name: example2;
+ animation-duration: 10s;
+}
+@keyframes example2 {
+ from {width: 0%;}
+ to {width: 60%;}
+}
+.p3{
+  width: 30%;
+ animation-name: example3;
+ animation-duration: 11s;
+}
+@keyframes example3 {
+ from {width: 0%;}
+ to {width: 30%;}
+}
+@media screen and (max-width: 700px){
+  .about-section-col{
+    flex: 100%;
+    margin: 10px 0;
+  }
+  .about, .skills {
+    padding: 0;
+  }
+  .about{
+    text-align: center;
+  }
+}
+/* end sec2 */
+
+ /* sec3 */
  
  .container {
    width: 100%;
@@ -219,119 +349,8 @@
    color: #fff;
  }
  
- /* end sec2 */
- 
- 
- /* sec3 */
- 
- .about-section{
-   background: #f1f1f1;
- }
- 
- .inner-width{
-   max-width: 1000px;
-   overflow: hidden;
-   padding: 0 20px;
-   /*margin: auto;*/
- }
- 
- .about-section h1{
-   text-align: center;
- }
- 
- .border{
-   width: 100px;
-   height: 3px;
-   background: #e74c3c;
-   margin: 40px auto;
- }
- 
- .about-section-row {
-   display: flex;
-   flex-wrap: wrap;
- }
- 
- .about-section-col {
-   flex: 50%;
- }
- 
- .about{
- padding-right: 30px;
- }
- 
- .about p {
-   text-align: justify;
-   padding-bottom: 20px;
- }
- 
- .about a{
-   display: inline-block;
-   color: #e72c3c;
-   text-decoration: none;
-   border: 2px solid #e72c3c;
-   border-radius: 24px;
-   padding: 8px 40px;
-   transition: 0.4s linear;
- }
- 
- .about a:hover {
-   color: #fff;
-   background: #e72c3c;
- }
- 
- .skills{
-   padding-left: 30px;
- }
- 
- .skill{
-   margin-bottom: 10px;
- }
- 
- .progress{
-   width: 100%;
-   background: #ddd;
-   border-radius: 12px;
- }
- 
- .progress-bar {
-   height: 12px;
-   background: #f9a826;
-   border-radius: 12px;
- }
- 
- .progress-bar span{
-   float: right;
-   margin-right: 6px;
-   line-height: 13px;
-   color: #fff;
-   font-size: 12px;
- }
- 
- .p1{
-  width: 80%;
- }
- 
- .p2{
-  width: 60%;
- }
- 
- .p3{
-   width: 30%;
- }
- 
- @media screen and (max-width: 700px){
-   .about-section-col{
-     flex: 100%;
-     margin: 10px 0;
-   }
-   .about, .skills {
-     padding: 0;
-   }
-   .about{
-     text-align: center;
-   }
- }
- /* end sec3 */
+ /* end sec3*/
+  
  
  
  /* sec4 */
@@ -346,6 +365,8 @@
  .profile-picture{
    
    text-align-last: center;
+   
+   text-align: -webkit-center;
  }
  .profile-wrapper {
    color: white;
