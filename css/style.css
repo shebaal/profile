@@ -31,7 +31,9 @@
  }
  /* APPLYING MEDIA QUERIES */
  @media (max-width: 768px) {
- .menu {     content-visibility: hidden;
+ .menu {  
+   
+  content-visibility: hidden;
   position: absolute;
   background-color:#3f3d56;
   right: 0;
